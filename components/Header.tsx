@@ -1,22 +1,29 @@
 import Link from "next/link";
-import { Button } from "./ui/button";
+import Image from "next/image";
 
 export default function Header() {
 	return (
-		<header className="w-full bg-blue-500 h-20 flex justify-between items-center px-12">
-			<div className="text-xl">Sick Logo</div>
+		<header className="w-full sticky top-0 bg-transparent h-20 flex justify-between items-center sm:px-12 px-6">
+			<div className="flex items-center justify-center space-x-4">
+				{" "}
+				<Image
+					src="/logo.png"
+					width="32"
+					height="32"
+					alt="TODO: Your Logo"
+				></Image>
+				<h2 className="sm:text-xl text-lg font-semibold">Sick Logo</h2>
+			</div>
 			<nav className="space-x-6">
-				<Link className="text-lg" href={"#Pricing"}>
+				<Link className="sm:text-lg text-base" href={"#Pricing"}>
 					Pricing
 				</Link>
-				<Link className="text-lg" href={"#Faq"}>
+				<Link className="sm:text-lg text-base" href={"#FAQ"}>
 					FAQ
 				</Link>
-				<Button>
-					<Link className="text-lg" href={"#Login"}>
-						Log in
-					</Link>
-				</Button>
+				<Link className="sm:text-lg text-base" href={"#Login"}>
+					Log in
+				</Link>
 			</nav>
 		</header>
 	);
