@@ -29,6 +29,9 @@ For Mac, switch `Ctrl` -> `Cmd` and `Alt` -> `Opt` unless otherwise specified.
 > Type ':' to go to a certain line in the file (or `Ctrl + g`, also Ctrl on Mac) \
 > Type '@' for code symbols in current file
 
+`Ctrl + b`: Toggle sidebar \
+Click `-` to right of your project folder to condense all folders
+
 `Ctrl + Page Up or Page Down`: Move to tab left or right (`Cmd + opt + ⬅️ or ➡️` on Mac) \
 `Ctrl + alt + ⬅️ or ➡️`: Move current tab to left or right group (`Cmd + ctrl + ⬅️ or ➡️` on Mac)
 
